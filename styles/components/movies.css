@@ -1,0 +1,38 @@
+.movies-container {
+  margin-top: 1.5em;
+  padding: 0.8em;
+}
+
+.movies-container .movies-wrapper {
+  margin-bottom: 1.2em;
+  padding: 0 1em;
+}
+.movies-container .movies-wrapper > p {
+  font-size: 1.2em;
+}
+
+.movies-container .movies-wrapper .movies {
+  padding: 0.9em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.movies-container .movies .movie {
+  cursor: pointer;
+  flex: 1;
+  transition: transform 0.2s;
+}
+
+.movies-container .movies .movie:hover {
+  transform: scale(1.15);
+  z-index: 100;
+}

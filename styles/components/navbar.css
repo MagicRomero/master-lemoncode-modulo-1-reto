@@ -1,6 +1,7 @@
 #sticky-section {
   position: sticky;
   top: 0px;
+  z-index: 999;
 }
 
 .navbar {
@@ -8,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.8em;
+  z-index: 999;
 }
 
 .navbar .logo-box {
@@ -40,5 +42,9 @@
 @media only screen and (max-width: 480px) {
   .navbar {
     justify-content: space-around;
+  }
+
+  .navbar .logo-box > span {
+    display: none;
   }
 }
