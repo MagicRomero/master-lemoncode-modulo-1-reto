@@ -1,0 +1,39 @@
+{
+  "name": "warner-live",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^8.1.2",
+    "postcss-cli": "^8.1.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^13.0.0"
+  },
+  "scripts": {
+    "postcss-build": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css",
+    "postcss-watch": "npm run postcss-build -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicRomero/master-lemoncode-modulo-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MagicRomero/master-lemoncode-modulo-1/issues"
+  },
+  "homepage": "https://github.com/MagicRomero/master-lemoncode-modulo-1#readme",
+  "keywords": [
+    "warner",
+    "lemoncode",
+    "frontend",
+    "reto",
+    "css",
+    "html",
+    "master-frontend",
+    "warner-live"
+  ],
+  "author": "Daniel Romero Tapia",
+  "license": "ISC"
+}
