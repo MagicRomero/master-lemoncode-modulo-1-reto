@@ -12,8 +12,8 @@
     "postcss-import": "^13.0.0"
   },
   "scripts": {
-    "postcss-build": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css -w",
-    "postcss-watch": "npm run postcss-build -w"
+    "postcss-build": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css",
+    "postcss-watch": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css -w"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/MagicRomero/master-lemoncode-modulo-1-reto/issues"
   },
-  "homepage": "https://github.com/MagicRomero/master-lemoncode-modulo-1-reto#readme",
+  "homepage": "https://github.com/MagicRomero/master-lemoncode-modulo-1-reto#index.html",
   "keywords": [
     "warner",
     "lemoncode",
