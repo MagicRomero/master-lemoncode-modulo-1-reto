@@ -1,5 +1,44 @@
-.navbar .navbar-items {
+#sticky-section {
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.8em;
+}
+
+.navbar .logo-box {
+  display: flex;
+}
+
+.navbar .logo-box > span {
+  margin-left: 0.4em;
+  align-self: center;
+  font-size: 26px;
+}
+
+.navbar .navbar-items {
+  display: flex;
+}
+
+.navbar .navbar-items a {
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbar-items a:hover {
+  background-color: white;
+  color: #0852a9;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    justify-content: space-around;
+  }
 }

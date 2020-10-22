@@ -3,17 +3,16 @@
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "postcss": "^8.1.2",
-    "postcss-cli": "^8.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "postcss": "^8.1.2",
+    "postcss-cli": "^8.1.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^13.0.0"
   },
   "scripts": {
-    "postcss-build": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css",
+    "postcss-build": "postcss styles/index.css --use cssnano postcss-import postcss-cssnext --o public/css/main.css -w",
     "postcss-watch": "npm run postcss-build -w"
   },
   "repository": {
